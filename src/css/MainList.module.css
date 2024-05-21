@@ -1,0 +1,15 @@
+.mainList {
+  /* border: 2px solid forestgreen; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemListCon {
+  width: 100%;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* 그리드 항목 사이의 간격 */
+}
