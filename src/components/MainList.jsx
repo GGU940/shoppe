@@ -8,7 +8,7 @@ const MainList = () => {
     return (
         <section className={style.mainList}>
             <h3>Shop The Latest</h3>
-            <Link to="#">View All</Link>
+            <Link to="/ShopAll">View All</Link>
             <ul className={style.itemListCon}>
                 <li>
                     <ItemListCard />

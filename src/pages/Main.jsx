@@ -32,6 +32,7 @@ const Main = () => {
 
     return (
         <main className="mw">
+            <h2 hidden>mainPage</h2>
             <MainBanner />
             <MainList />
         </main >

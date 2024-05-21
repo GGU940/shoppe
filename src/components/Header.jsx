@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header className={`mw ${style.head}`}>
-            <h1><img src="./img/logo.svg" alt="logo" /></h1>
+            <h1>
+                <Link to="/">
+                    <img src="./img/logo.svg" alt="logo" />
+                </Link></h1>
             <nav>
                 <div>
-                    <Link to="#">SHOP</Link>
+                    <Link to="/ShopAll">SHOP</Link>
                     <Link to="#">BLOG</Link>
                     <Link to="#">OUR STORY</Link>
                 </div>

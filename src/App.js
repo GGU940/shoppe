@@ -6,6 +6,7 @@ import "./css/App.css";
 import Header from "./components/Header";
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
+import ShopAll from "./pages/ShopAll";
 
 function App() {
   const [itemList, setItemList] = useState([]);
@@ -13,7 +14,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/ShopAll" element={<ShopAll />} />
+      </Routes>
+
       <Footer />
     </div>
   );
